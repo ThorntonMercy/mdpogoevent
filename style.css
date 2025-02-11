@@ -202,9 +202,9 @@ specific elements for the menu page */
 }
 
 .MCA-menu {
-    /* border: 1px #000;
+    border: 1px #000;
     border-radius: 8px; 
-    border-style: solid; */
+    border-style: solid;
     text-align: left;
 }
 
