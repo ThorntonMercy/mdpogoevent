@@ -1,0 +1,328 @@
+/* Maryland Pokemon Go Event Center CSS Stylesheet */
+
+
+/* Body elements 
+page background color, page font elements, header elements. */
+
+body { 
+    background-color:#2d2d2c; 
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+h1 {
+    color:#c0900c;
+    font-size: 25px; 
+}
+
+h2 {
+    color: #d8b00e;
+    text-align: center; 
+    font-size: 18px;
+}
+
+h3 { 
+    color: #d8b00e;
+    text-align: center; 
+    font-size: 14px;
+}
+
+/* Navigation Bar Elements
+covering link elements, horizontal nav bar, and attributes */
+
+#navbar {
+    background-color:#222221;
+    text-align: center;
+    color: #000;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222221;
+    display: inline;
+}
+
+li {
+    display: inline-block; 
+}
+
+#navbar > nav > ul > li {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    text-align: center; 
+    text-decoration: none;
+    background-color: #222221;  
+}
+
+#navbar > nav > ul > li > a {
+    color: #fff;
+}
+
+#navbar > nav > ul > li > a:hover {
+    color: #fff;
+}
+
+#navbar > nav > ul > li:hover {
+    background-color: #000;
+}
+
+
+/* General Body Elements
+including general properties for paragraphs, text, links. */
+
+
+p {
+    color: #acacac;
+    margin: 10px; 
+}
+
+a { 
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color:#ff0000; 
+}
+
+
+/* Body Class Content Elements
+including background color and border elements for sections/articles */
+
+.content { 
+    background-color:#393939;
+    box-sizing: 70%;
+    border-style: solid; 
+    border-color:#000;
+    border-radius: 10px; 
+}
+
+
+/* Image Styling  
+for general images  */
+
+img {
+    max-width: 100%
+}
+
+
+/* Footer Elements */
+
+.footer {
+    text-align: center;
+    font-size: small;
+    font-variant-caps: all-small-caps;
+    color: #fff;
+    display: block;
+}
+
+
+/* INDEX Page 
+specific elements for the home page  */
+
+/* Home Page Hero Image elements
+position, sizing  */
+
+#banner {
+    position:relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; 
+    height: auto;
+}
+
+#bannerimage {
+    position: relative;
+}
+
+/* Home Page Header elements
+placing header text over the hero image, color, attributes, faded background 
+color to increase visibility over the image. */
+
+#pageheader {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    bottom: 4px;
+    right: 10px; 
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+
+
+/* INDEX Featured Event Image properties  */
+
+.event {
+    border-radius: 4px;
+    width: 150px;
+    padding: 5px;
+
+}
+
+#featured-events {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row; 
+    padding: 10px;
+    background-color:#393939; 
+    color: #acacac;
+    font-size: 12px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .featured { 
+        padding: 0 10px;
+    }
+}
+
+
+
+/* MENU Page 
+specific elements for the menu page */
+
+#MCA-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 10px; 
+    background-color:#393939;
+}
+
+@media (max-width: 700px) {
+    div#MCA-container {
+        display: block; 
+    }
+}
+
+.MCA-menu {
+    /* border: 1px #000;
+    border-radius: 8px; 
+    border-style: solid; */
+    text-align: left;
+}
+
+.menu-photo-box {
+    text-align: center;
+    color: #acacac;
+    font-size: medium;
+    font-variant: small-caps;
+
+}
+
+.snackphoto {
+    border-radius: 10%;
+}
+
+tbody th {
+    background-color:#000;
+    color: #fff;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #cecece;
+    color: #000;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #717171;
+    color: #000;
+  }
+
+/* EVENTS Page
+specific elements for the events page  */
+
+.our-events-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+  }
+
+.event-box {
+    background-color:#393939;
+    border: solid 1px;
+    border-color: #000;
+    color: #acacac;
+    font-size: 12px;
+    padding: 5px;
+    margin: 5px;
+    max-width: 200px; 
+  }
+
+.event-thumbs {
+    border-radius: 20%;
+}
+
+
+/* LOCATION Page 
+specific elements for the location page */
+
+.map { 
+    text-align: center;
+}
+
+
+.address {
+    text-align: center; 
+    background-color:#393939;
+    box-sizing: 70%;
+    border-style: solid; 
+    border-color:#000;
+    border-radius: 10px; 
+}
+
+
+/* CONTACT US Page 
+specific elements for the "Contact Us" page */
+
+
+/* Contact Form 
+form elements including colors, buttons. */
+
+
+#contact-us-container { 
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+}
+
+.contact-form-box {
+    align-content: center; 
+    background-color:#393939;
+    border: solid 1px;
+    border-color: #000;
+    color: #acacac;
+    padding: 5px;
+    margin: 5px;
+    max-width: 500px; 
+}
+
+
+input {
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 2px; 
+    background-color: #393939;
+    color: #acacac;
+    padding: 10px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #000;
+    border: 1px solid #000;
+    color: #acacac;
+    padding: 10px 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+  }
